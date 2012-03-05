@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+http_basic_authenticate_with name: "SN_Team",
+							 password: "simple Pa55word"
+
   # GET /users
   # GET /users.json
   def index
