@@ -1,5 +1,6 @@
 <h1>Listing users</h1>
 
+<div id="content">
 <table>
   <tr>
     <th>Name</th>
@@ -8,7 +9,6 @@
     <th></th>
     <th></th>
   </tr>
-
 <% @users.each do |user| %>
   <tr>
     <td><%= user.name %></td>
@@ -19,6 +19,7 @@
   </tr>
 <% end %>
 </table>
+<div>
 
 <br />
 

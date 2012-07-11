@@ -6,6 +6,7 @@ http_basic_authenticate_with name: "SN_Team",
   # GET /users.json
   def index
     @users = User.all
+	@title = "Users"
 
     respond_to do |format|
       format.html # index.html.erb
